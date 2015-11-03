@@ -1,10 +1,30 @@
-# RPS Challenge: Rōnin Badge Test
-
+##RPS Challenge
 [![Build Status](https://travis-ci.org/adrianw1832/rps-challenge.svg?branch=master)](https://travis-ci.org/adrianw1832/rps-challenge)
 
-How I approached it
--------------------
-I approached it pretty much the same way I did for BattleshipsWeb this week. Following the feature then unit test cycle, I actually wrote a couple of webpages before doing the app logic. For the app logic, I largely followed Ben's Battleships as a good template. After that, I finished up on the Single Player Mode and went on to do the Multiplayer Mode. The process was largely similar to the single player with the exception of tracking the session ids and using refreshing lobby as a means to match the players. I am not sure if this is a good way to implement it but it certainly works. Doing multiplayer on battleships helped a lot with the bonus part since they are pretty similar in the implementation. I wasn't planning on doing the second bonus because it could easily be done with a bunch of case when codes. However, I gave it some thought and I wanted to see if there was a more elegant solution than that. The idea struck me suddenly and I would like to think that my implementation is quite a bit better, so I just added a bunch of tests and implemented the second bonus.
+This project is from the week 3 weekend challenge of the Makers Academy course.
+The goal is to build a simple rock paper scissor logic and then put that on the
+web with 2 modes. There is a single player and a multiplayer mode. For the game
+and player logic, I largely followed Ben's Battleships as a good guideline.
+
+##Challenges
+
+Coming from Battleships web, I would say that everything was pretty
+straightforward and easy. Doing the multiplayer mode with Battleships definitely
+helped with the bonus part. I wasn't going to implement the second bonus but
+then I found an interesting way to tackle it and so I did.
+
+##Technologies used
+
+Ruby, Sinatra, HTML, CSS
+
+RSpec, Capybara
+
+##How to install
+
+Clone the repo and run rackup in the terminal. Visit localhost:9292 and play the
+game.
+
+Run rspec in the terminal to run all the tests.
 
 Instructions
 -------
