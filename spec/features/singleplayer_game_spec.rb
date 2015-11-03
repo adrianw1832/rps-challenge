@@ -91,7 +91,7 @@ feature 'Singleplayer game' do
   scenario 'User can win the game' do
     setup_singleplayer
     choose('Rock')
-    allow($game1.player_2).to receive(:random_move) { $game1.player_2.choose(:scissors) }
+    allow($game1.player_2).to receive(:choice) { [:scissors] }
     click_button('Play')
     expect(page).to have_content('You won!')
   end
